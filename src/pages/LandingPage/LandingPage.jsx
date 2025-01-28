@@ -1,10 +1,13 @@
 import React from 'react'
 import module from "./landingPage.module.css";
+import Container from '@mui/material/Container';
 
 const LandingPage = () => {
   return (
-    <div>
-      <h1>landing page</h1>
+    <div className={module.landingPage}>
+     <Container>
+        
+     </Container>
     </div>
   )
 }
