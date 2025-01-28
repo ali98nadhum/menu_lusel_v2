@@ -1,11 +1,14 @@
 import React from 'react'
 import module from  "./header.module.css";
+import logo from "../../assets/nav-logo.png";
 
 const Header = () => {
   return (
-    <div>
-      <h1 className={module.test}>header</h1>
-    </div>
+   <div className={module.Header}>
+        <div className={module.logo}>
+            <img src={logo} alt="logo" />
+        </div>
+   </div>
   )
 }
 
