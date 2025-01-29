@@ -1,6 +1,7 @@
 import Header from "./utils/Header/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage";
+import Footer from "./utils/Footer/Footer";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <LandingPage/> } />
       </Routes>
+      <Footer />
     </Router>
   );
 }
