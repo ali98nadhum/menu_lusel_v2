@@ -1,0 +1,40 @@
+
+
+footer{
+    background-color: #2d2a47;
+    height: 100px;
+    padding: 10px;
+}
+
+footer .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+footer .top .left_sec h3,
+footer .top .right_sec h3{
+    color: #f7d68d;
+    font-size: 20px;
+}
+
+footer .top .left_sec p{
+    color: white;
+    margin-top: 5px;
+}
+
+footer .top .right_sec .icon_side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+
+footer .top .right_sec .icon_side .insta_icon,
+footer .top .right_sec .icon_side .whats_icon{
+    color: white;
+    font-size: 24px;
+}
