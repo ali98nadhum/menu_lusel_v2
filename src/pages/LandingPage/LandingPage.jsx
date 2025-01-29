@@ -22,7 +22,7 @@ const LandingPage = () => {
 
         {/* ------- Button menu ------- */}
         <div className={module.btn_Container}>
-          <Button className={module.btnMenu}> <Link>MENU</Link> </Button>
+          <Button className={module.btnMenu}> <Link to="/category">MENU</Link> </Button>
         </div>
 
 
