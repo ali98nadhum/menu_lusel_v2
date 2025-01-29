@@ -2,7 +2,7 @@
 
 footer{
     background-color: #2d2a47;
-    height: 100px;
+    /* height: 100px; */
     padding: 10px;
 }
 
@@ -37,4 +37,25 @@ footer .top .right_sec .icon_side .insta_icon,
 footer .top .right_sec .icon_side .whats_icon{
     color: white;
     font-size: 24px;
+}
+
+ footer .bottom .dev_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+footer .bottom .dev_info p{
+    color: white;
+}
+
+footer .bottom .dev_info a{
+    text-decoration: none;
+}
+
+footer .bottom .dev_info a .whats_icon{
+    color: white;
+    font-size: 18px;
 }

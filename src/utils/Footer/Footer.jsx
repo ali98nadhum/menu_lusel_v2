@@ -22,7 +22,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={module.bottom}></div>
+        <div className={module.bottom}>
+            <hr />
+            <div className={module.dev_info}>
+                <p>Development by Ali Nadhum</p>
+                <a href="tel:+7717397939"><FaWhatsapp  className={module.whats_icon}/></a>
+            </div>
+        </div>
       </Container>
     </footer>
   );
