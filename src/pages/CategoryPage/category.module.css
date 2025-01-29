@@ -1,5 +1,26 @@
-
-
-.CategoryPage{
+.CategoryPage {
     min-height: 100vh;
+    margin-top: 30px;
+}
+
+.CategoryPage .category_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.CategoryPage .line {
+    border: 2px solid #f7d58d;
+    width: 500px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.CategoryPage .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px 50px;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
