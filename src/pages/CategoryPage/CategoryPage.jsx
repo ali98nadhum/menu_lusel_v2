@@ -3,6 +3,35 @@ import module from "./category.module.css";
 import foodAnimation from "../../../public/foodAnimation.json";
 import Lottie from "lottie-react";
 import { Container } from '@mui/material';
+import CategoryCard from '../../components/CategoryCard/CategoryCard';
+
+const data = [
+    {
+        id: 1,
+        title: "البركر",
+        img: "https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png"
+    },
+    {
+        id: 2,
+        title: "البركر",
+        img: "https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png"
+    },
+    {
+        id: 3,
+        title: "البركر",
+        img: "https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png"
+    },
+    {
+        id: 4,
+        title: "البركر",
+        img: "https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png"
+    },
+    {
+        id: 5,
+        title: "البركر",
+        img: "https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png"
+    },
+]
 
 const CategoryPage = () => {
   return (
@@ -19,7 +48,11 @@ const CategoryPage = () => {
       </div>
       <hr className={module.line} />
       {/* ------- category card ------- */}
-      <div className={module.grid}></div>
+      <div className={module.grid}>
+        {data.map(item => (
+          <CategoryCard data={item}/>
+        ))}
+      </div>
       </Container>
     </div>
   )

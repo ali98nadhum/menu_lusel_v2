@@ -23,4 +23,34 @@
     grid-gap: 40px 50px;
     margin-top: 30px;
     margin-bottom: 60px;
+    /* background-color: red; */
 }
+
+
+
+@media (max-width: 1200px) {
+    .CategoryPage .grid {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  
+  @media (max-width: 1000px){
+    .CategoryPage .grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px 30px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .CategoryPage .grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px 30px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  
+  
