@@ -9,10 +9,46 @@
     padding-top: 50px;
 }
 
-.landingPage .btn_menu{
+.landingPage .btn_Container{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
     margin-top: 10px;
+}
+
+
+.landingPage .btn_Container .btnMenu{
+    color: black !important;
+    background-color: #f7d68d;
+    padding: 8px 35px;
+    font-family: 'Almarai', sans-serif;
+}
+
+.landingPage .btn_Container .btnMenu:hover{
+    background-color: #f0c768;
+}
+
+.landingPage .btn_Container .btnMenu a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.landingPage .address{
+    padding: 10px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.address .address_title{
+    color: white;
+}
+
+.landingPage .address .map_icon{
+    font-size: 22px;
+    color: #1dcae0;
 }
