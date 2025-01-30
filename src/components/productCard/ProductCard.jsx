@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import module from "./productCard.module.css";
 
-const ProductCard = ({ data }) => {
+const ProductCard = ({ data , categoryData }) => {
   return (
     <motion.div
       className={module.menu}
@@ -16,7 +16,7 @@ const ProductCard = ({ data }) => {
         transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
       >
         <motion.img
-          src={data.img}
+          src={categoryData.image.url}
           alt={data.title}
           className={module.image}
           initial={{ scale: 0.9, rotate: -3 }}

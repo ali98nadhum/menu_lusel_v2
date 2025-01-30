@@ -1,30 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import module from "./productPage.module.css";
 import { Container } from '@mui/material';
 import ProductCard from '../../components/productCard/ProductCard';
+import { useStore } from '../../store';
+import { useParams } from 'react-router-dom';
 
 function ProductPage() {
 
-    const data = [
-        {
-            id:1,
-            title: "بركر لحم",
-            img: "https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png",
-            price: 4500
-        },
-        {
-            id:2,
-            title: "بركر دجاج",
-            img: "https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png",
-            price: 5000
-        },
-        {
-            id:3,
-            title: "بركر بالجبن",
-            img: "https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png",
-            price: 4500
-        },
-    ]
+    const {oneCategoryData , fetchOneCategory , isLoading} = useStore();
+    const { id } = useParams();
+
+    useEffect(() => {
+        fetchOneCategory(id);
+    } , [id])
+
+  
   return (
     <div className={module.productPage}>
      <Container>
@@ -35,8 +25,8 @@ function ProductPage() {
         </div>
         {/* ------ Product sec -------- */}
         <div className={module.productSec}>
-            {data.map((item) => (
-                <ProductCard data={item} />
+            {oneCategoryData.products.map((item) => (
+                <ProductCard key={item._id} data={item} categoryData={oneCategoryData} />
             ))}
         </div>
      </Container>
