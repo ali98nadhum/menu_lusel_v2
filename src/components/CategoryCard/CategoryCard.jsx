@@ -4,7 +4,7 @@ import { Card, CardContent, CardMedia, Typography, CardActionArea } from "@mui/m
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const CategoryCard = (props) => {
+const CategoryCard = ({data}) => {
   return (
     <motion.div
       className={module.test}
@@ -21,7 +21,7 @@ const CategoryCard = (props) => {
               className={module.img}
               component="img"
               height="200"
-              image={props.data.img}
+              image={data.image.url}
               sx={{ width: "100%" }}
             />
             <CardContent>
@@ -40,7 +40,7 @@ const CategoryCard = (props) => {
                   padding: "3px",
                 }}
               >
-                {props.data.title}
+                {data.title}
               </Typography>
             </CardContent>
           </CardActionArea>
