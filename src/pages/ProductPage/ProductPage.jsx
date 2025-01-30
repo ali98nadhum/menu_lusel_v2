@@ -9,17 +9,20 @@ function ProductPage() {
         {
             id:1,
             title: "بركر لحم",
-            img: "https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png"
+            img: "https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png",
+            price: 4500
         },
         {
             id:2,
             title: "بركر دجاج",
-            img: "https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png"
+            img: "https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png",
+            price: 5000
         },
         {
             id:3,
             title: "بركر بالجبن",
-            img: "https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png"
+            img: "https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png",
+            price: 4500
         },
     ]
   return (
@@ -33,7 +36,7 @@ function ProductPage() {
         {/* ------ Product sec -------- */}
         <div className={module.productSec}>
             {data.map((item) => (
-                <ProductCard />
+                <ProductCard data={item} />
             ))}
         </div>
      </Container>
