@@ -14,7 +14,7 @@ const CategoryCard = ({data}) => {
       whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)" }}
       whileTap={{ scale: 0.95 }}
     >
-      <Link to={`/category/product/id`} style={{ textDecoration: "none" }}>
+      <Link to={`/category/product/${data._id}`} style={{ textDecoration: "none" }}>
         <Card className={module.card} sx={{ maxWidth: 345 }}>
           <CardActionArea>
             <CardMedia
