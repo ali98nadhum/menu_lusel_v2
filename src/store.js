@@ -22,4 +22,18 @@ export const useStore = create((set) => ({
       set({ isLoading: false });
     }
   },
+
+  oneCategoryData: [],
+  fetchOneCategory: async (id) => {
+    try {
+      set({isLoading: true});
+      const response = await axios.get(
+        `http://localhost:8000/api/v1/category/${id}`
+      );
+      set({oneCategoryData :response.data.data , isLoading: false})
+    } catch (error) {
+      console.error("Error fetching data", error);
+      set({ isLoading: false });
+    }
+  }
   }));
