@@ -13,8 +13,8 @@ const data = [
     },
     {
         id: 2,
-        title: "البركر",
-        img: "https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png"
+        title: "بيتزا",
+        img: "https://t3.ftcdn.net/jpg/06/27/23/56/360_F_627235669_iz0O2leKYRzjxAKdFP7odpp9eCOZREtN.jpg"
     },
     {
         id: 3,

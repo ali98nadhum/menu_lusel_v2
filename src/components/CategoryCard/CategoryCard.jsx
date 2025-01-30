@@ -11,7 +11,7 @@ const CategoryCard = (props) => {
     
   return (
     <div className={module.test}>
-    <Link to={`/`}>
+    <Link to={`category/product/id`}>
       <Card className={module.card} sx={{ maxWidth: 345 }}>
         <CardActionArea>
           <CardMedia
