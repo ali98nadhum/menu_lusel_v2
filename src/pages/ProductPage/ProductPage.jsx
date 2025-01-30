@@ -12,7 +12,7 @@ function ProductPage() {
 
     useEffect(() => {
         fetchOneCategory(id);
-    } , [id])
+    } , [id , fetchOneCategory])
 
   
   return (
@@ -25,7 +25,7 @@ function ProductPage() {
         </div>
         {/* ------ Product sec -------- */}
         <div className={module.productSec}>
-            {oneCategoryData.products.map((item) => (
+            {oneCategoryData?.products?.map((item) => (
                 <ProductCard key={item._id} data={item} categoryData={oneCategoryData} />
             ))}
         </div>
