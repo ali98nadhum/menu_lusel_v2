@@ -4,6 +4,7 @@ import foodAnimation from "../../../public/foodAnimation.json";
 import Lottie from "lottie-react";
 import { Container, CircularProgress } from '@mui/material';
 import CategoryCard from '../../components/CategoryCard/CategoryCard';
+import LoadingPage from '../../utils/LoadingPage/LoadingPage';
 import { useStore } from '../../store';
 
 const CategoryPage = () => {
@@ -25,8 +26,7 @@ const CategoryPage = () => {
 
         {isLoading ? (
           <div className={module.loadingContainer}>
-            <CircularProgress color="primary" />
-            <p>جارٍ تحميل البيانات...</p>
+            <LoadingPage/>
           </div>
         ) : (
           <div className={module.grid}>
