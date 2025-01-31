@@ -14,7 +14,7 @@ export const useStore = create((set) => ({
     try {
       set({ isLoading: true });
       const response = await axios.get(
-        "http://localhost:8000/api/v1/category"
+        "https://menu-backend-id9e.vercel.app/api/v1/category"
       );
       set({ categoryData: response.data.data, isLoading: false });
     } catch (error) {
@@ -28,7 +28,7 @@ export const useStore = create((set) => ({
     try {
       set({isLoading: true});
       const response = await axios.get(
-        `http://localhost:8000/api/v1/category/${id}`
+        `https://menu-backend-id9e.vercel.app/api/v1/category/${id}`
       );
       set({oneCategoryData :response.data.data , isLoading: false})
     } catch (error) {
