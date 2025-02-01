@@ -30,3 +30,12 @@
       opacity: 1; 
     }
   }
+
+
+
+  @media (max-width: 500px){
+    .Header .logo img{
+      width: 180px;
+      height: 75px;
+    }
+  }
