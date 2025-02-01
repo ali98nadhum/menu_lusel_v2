@@ -1,12 +1,10 @@
-
-
-footer{
+footer {
     background-color: #2d2a47;
     /* height: 100px; */
     padding: 10px;
 }
 
-footer .top{
+footer .top {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,17 +12,17 @@ footer .top{
 }
 
 footer .top .left_sec h3,
-footer .top .right_sec h3{
+footer .top .right_sec h3 {
     color: #f7d68d;
     font-size: 20px;
 }
 
-footer .top .left_sec p{
+footer .top .left_sec p {
     color: white;
     margin-top: 5px;
 }
 
-footer .top .right_sec .icon_side{
+footer .top .right_sec .icon_side {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,12 +32,12 @@ footer .top .right_sec .icon_side{
 
 
 footer .top .right_sec .icon_side .insta_icon,
-footer .top .right_sec .icon_side .whats_icon{
+footer .top .right_sec .icon_side .whats_icon {
     color: white;
     font-size: 24px;
 }
 
- footer .bottom .dev_info{
+footer .bottom .dev_info {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,15 +45,40 @@ footer .top .right_sec .icon_side .whats_icon{
     margin-top: 20px;
 }
 
-footer .bottom .dev_info p{
+footer .bottom .dev_info p {
     color: white;
 }
 
-footer .bottom .dev_info a{
+footer .bottom .dev_info a {
     text-decoration: none;
 }
 
-footer .bottom .dev_info a .whats_icon{
+footer .bottom .dev_info a .whats_icon {
     color: white;
     font-size: 18px;
+}
+
+
+
+
+@media (max-width: 500px) {
+
+    footer .top .left_sec h3,
+    footer .top .right_sec h3 {
+        font-size: 16px;
+    }
+
+
+    footer .top .left_sec p {
+        font-size: 10px;
+    }
+
+    footer .top .right_sec .icon_side .insta_icon,
+    footer .top .right_sec .icon_side .whats_icon {
+        font-size: 20px;
+    }
+
+    footer .bottom .dev_info p {
+        font-size: 12px;
+    }
 }
