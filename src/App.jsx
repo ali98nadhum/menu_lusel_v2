@@ -5,6 +5,7 @@ import Footer from "./utils/Footer/Footer";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
 import ProductPage from "./pages/ProductPage/ProductPage";
 
+
 function App() {
   return (
     <Router>
