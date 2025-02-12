@@ -8,6 +8,7 @@ import LoadingPage from "../../utils/LoadingPage/LoadingPage";
 
 function ProductPage() {
 
+    
     const { oneCategoryData, fetchOneCategory, isLoading } = useStore();
     const { id } = useParams();
 
