@@ -50,4 +50,5 @@ const CategoryCard = ({data}) => {
   );
 };
 
+
 export default CategoryCard;
